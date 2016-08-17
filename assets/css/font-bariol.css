@@ -1,0 +1,10 @@
+/*Font Bariol_regular*/
+
+@font-face{ 
+	font-family: 'Bariol_Regular';
+	src: url('../fonts/Bariol/bariol_regular-webfont.eot');
+	src: url('../fonts/Bariol/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/Bariol/bariol_regular-webfont.woff') format('woff'),
+	     url('../fonts/Bariol/bariol_regular-webfont.ttf') format('truetype'),
+	     url('../fonts/Bariol/bariol_regular-webfont.svg#webfont') format('svg');
+}
