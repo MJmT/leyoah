@@ -12,70 +12,12 @@
 	</head>
 	<body id="top">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<h1><a href="#"><div id="logo">leyoah</div></a></h1>
-					<p>Designing the web the way YOU like it </p>
-					<ul class="actions">
-						<li><a href="#one" class="button icon fa-chevron-down scrolly">Learn More</a></li>
-						<li><a href="#" class="button special icon fa-envelope">Get in touch</a></li>
-						
-					</ul>
-				</div>
-				<div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="" /></div></div>
-			</header>
+	<?php 
+			include('layout/header.php');
+			include('layout/about_us.php');
+			include('layout/developers.php');
 
-		<!-- One -->
-			<section id="one" class="wrapper style2 special">
-				<div class="custominner"><header class="major">
-				
-					<h2>We are a team of young developers from India. We create, design, tweak anything that runs on a PHP environment. <br />
-					vehicula et gravida elementum</h2></div>
-				</header>
-				<ul class="icons major">
-					<li><span class="icon fa-camera-retro"><span class="label">Shoot</span></span></li>
-					<li><span class="icon fa-refresh"><span class="label">Process</span></span></li>
-					<li><span class="icon fa-cloud"><span class="label">Upload</span></span></li>
-				</ul>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper">
-				<div class="inner alt">
-					<section class="spotlight">
-						<div class="image"><img src="images/pic01.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Magna sed ultrices</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/pic02.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Ultrices nullam aliquam</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/pic03.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Aliquam sed magna</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
-						</div>
-					</section>
-					<section class="special">
-						<ul class="icons labeled">
-							<li><span class="icon fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
-							<li><span class="icon fa-refresh"><span class="label">Sed vehicula elementum</span></span></li>
-							<li><span class="icon fa-cloud"><span class="label">Elit fusce consequat</span></span></li>
-							<li><span class="icon fa-code"><span class="label">Lorem nullam tempus</span></span></li>
-							<li><span class="icon fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
-						</ul>
-					</section>
-				</div>
-			</section>
-
+		?>
 		<!-- Three -->
 			<section id="three" class="wrapper style2 special">
 				<header class="major">
@@ -330,26 +272,42 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						</ul>
 					</section>
 -->
+
+<?php  
+if (isset($contact)) {
+    if ($contact->errors) {
+        foreach ($contact->errors as $error) {
+          echo "<div class=\"alert alert-danger\">" .$error . "</div>";
+        }
+    }
+    if($contact->messages) {
+        foreach ($contact->messages as $message) {
+            echo "<div class=\"alert alert-success\">a" .$message . "</div>";
+        }
+    }
+}
+?>
+
 					<section>
 						<h4>Form</h4>
-						<form method="post" action="post.php">
+						<form method="post" action="">
 							<div class="row uniform">
 								<div class="6u 12u$(xsmall)">
-									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									<input type="text" name="user_name" id="demo-name" value="" placeholder="Name" />
 								</div>
 								<div class="6u$ 12u$(xsmall)">
-									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									<input type="email" name="user_email" id="demo-email" value="" placeholder="Email" />
 								</div>
 								<div class="6u$ 12u$(xsmall)">
-									<input type="text" name="website_url" id="website_url" value="" placeholder="Website" />
+									<input type="text" name="web_url" id="website_url" value="" placeholder="Website" />
 								</div>
 								
 								<div class="12u$">
-									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									<textarea name="user_message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
 								</div>
 								<div class="12u$">
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="submit" value="Send Message"  name="send_message" class="special" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</div>
