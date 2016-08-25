@@ -14,8 +14,9 @@ if (isset($contact)) {
 }
 ?>
 
-					<section>
-						<h4>Form</h4>
+					<section id="four" class="wrapper">
+				<div class="inner">
+						<h2>Contact Us</h2>
 						<form method="post" action="">
 							<div class="row uniform">
 								<div class="6u 12u$(xsmall)">

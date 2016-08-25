@@ -5,7 +5,7 @@
 					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 				</ul>
-				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+				<p class="copyright ">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
 			</footer>
 
 		<!-- Scripts -->
