@@ -2,17 +2,17 @@
 			<section id="two" class="wrapper">
 				<div class="inner alt">
 					<section class="spotlight">
-						<div class="image"><img src="images/pic01.jpg" alt="" /></div>
+						<div class="image"><img src="images/developers/manju.jpg" alt="" /></div>
 						<div class="content">
-							<h3>Magna sed ultrices</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h2>Manjunath M</h2>
+							<p>Web developer and PHP enthusiast. </p>
 						</div>
 					</section>
 					<section class="spotlight">
-						<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+						<div class="image"><img src="images/developers/ajmal.jpg" alt="" /></div>
 						<div class="content">
-							<h3>Ultrices nullam aliquam</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h2>Muhammed Ajmal</h2>
+							<p>Lead developer and likes to play around with python, java and PHP.</p>
 						</div>
 					</section>
 					<section class="spotlight">
