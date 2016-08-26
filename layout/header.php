@@ -9,7 +9,7 @@
 					<p>Designing the web the way YOU like it </p>
 					<ul class="actions">
 						<li><a href="#one" class="button icon fa-chevron-down scrolly">Learn More</a></li>
-						<li><a href="#" class="button special icon fa-envelope">Get in touch</a></li>
+						<li><a href="#four" class="button special icon fa-envelope scrolly">Get in touch</a></li>
 						
 					</ul>
 				</div>
