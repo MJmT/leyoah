@@ -1,2 +1,2 @@
 #config folder
-config/db.php
+config/*.php
