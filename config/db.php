@@ -11,7 +11,7 @@
  * DB_USER: user for your database. the user needs to have rights for SELECT, UPDATE, DELETE and INSERT.
  * DB_PASS: the password of the above user
  */
-define("DB_HOST", "leyoah-db.czyi07rluq7j.us-west-2.rds.amazonaws.com:3306");
+define("DB_HOST", "localhost");
 define("DB_NAME", "leyoah");
 define("DB_USER", "root");
-define("DB_PASS", "leyoahisgood");
+define("DB_PASS", "sarauthi");
