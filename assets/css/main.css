@@ -4175,3 +4175,21 @@
 	color: #4696e5;
 
 }
+
+.developer {
+	letter-spacing: 1px;
+}
+
+.developer.title {
+	color: #696969;
+	font-size: 35px;
+	font-weight: normal;
+}
+
+p.developer.contents {
+	font-color:#828282;
+	font-size: 20px;
+
+
+}
+
